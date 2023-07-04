@@ -1,0 +1,243 @@
+* {
+  margin: 0;
+  padding: 0;
+
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+.app {
+  font-family: 'Poppins', sans-serif !important;
+
+}
+
+.bg {
+  background-color: rgb(0, 0, 0);
+  margin-bottom: -2px !important;
+}
+
+.navbar {
+  background-color: rgb(11, 11, 11);
+  border-radius: 15px !important;
+}
+
+.main {
+  background-color: black;
+  min-height: 100vh;
+}
+
+.main2 {
+  background-color: black;
+  min-height: 100vh;
+}
+
+.name {
+  background: linear-gradient(to bottom right, rgb(116, 4, 116), rgb(44, 102, 184), rgb(82, 109, 189));
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.routes a {
+  text-decoration: none !important;
+  color: white !important;
+}
+
+
+
+
+.routes a:hover {
+  background: linear-gradient(to bottom right, rgb(116, 4, 116), rgb(44, 102, 184), rgb(82, 109, 189));
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+
+}
+
+
+
+.routes {
+  background-color: rgb(11, 11, 11) !important;
+}
+
+@media screen and (max-width:991px) {
+  .routes {
+    background-color: transparent !important;
+  }
+
+}
+
+
+.act-button {
+  background-color: transparent !important;
+
+  border-color: blueviolet !important;
+}
+
+.act-button:hover {
+  background: linear-gradient(to bottom right, rgb(116, 4, 116), rgb(44, 102, 184), rgb(82, 109, 189)) !important;
+  -webkit-text-fill-color: transparent !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+
+}
+
+.intro-line {
+  text-align: justify;
+}
+
+.btn-close {
+  color: aliceblue !important;
+}
+
+
+
+.canvas {
+  background-color: rgb(21, 21, 21, 0.3) !important;
+  backdrop-filter: blur(5px) brightness(2);
+
+}
+
+.navbar-toggler {
+  border-color: transparent !important;
+  color: aliceblue !important;
+  font-size: 35px !important;
+}
+
+.links a {
+  color: aliceblue !important;
+  font-size: 25px;
+}
+
+
+
+
+.contact-logos {
+  transition: transform .1s;
+}
+
+.contact-logos:hover {
+  -ms-transform: scale(1.3);
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+
+
+}
+
+
+.gotosign {
+  text-decoration: none !important;
+}
+
+/* skills */
+
+
+
+
+.skillc {
+  max-width: 900px !important;
+}
+
+.line {
+  max-width: 650px !important;
+  height: 2px !important;
+  background: linear-gradient(to bottom right, rgb(116, 4, 116), rgb(44, 102, 184), rgb(82, 109, 189)) !important;
+}
+
+.skill-logos {
+  transition: transform .2s;
+}
+
+.skill-logos:hover {
+  -ms-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.certline {
+
+  max-width: 280px !important;
+  height: 2px !important;
+  background: linear-gradient(to bottom right, rgb(116, 4, 116), rgb(44, 102, 184), rgb(82, 109, 189)) !important;
+}
+
+.view {
+  text-decoration: none !important;
+  color: white !important;
+}
+
+.view:hover {
+  background: linear-gradient(to bottom right, rgb(116, 4, 116), rgb(44, 102, 184), rgb(82, 109, 189)) !important;
+  -webkit-text-fill-color: transparent !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+}
+
+
+.view2 {
+  text-decoration: none !important;
+  background: linear-gradient(to bottom right, rgb(116, 4, 116), rgb(44, 102, 184), rgb(82, 109, 189)) !important;
+  -webkit-text-fill-color: transparent !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+}
+
+.project-description {
+  text-align: justify;
+}
+
+/* About */
+
+
+/* .profile-picture {
+max-width: 100%;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+} */
+
+
+.about {
+  background-color: black;
+  min-height: 100vh;
+}
+
+/* footer */
+
+
+.bar {
+  background-color: rgb(11, 11, 11);
+  border-radius: 15px !important;
+
+}
+
+.footline {
+  width: auto;
+  max-width: 300px !important;
+  height: 1px !important;
+
+}
+
+.link a {
+  color: gray !important;
+}
+
+/* contact */
+
+input,
+textarea {
+  width: 100%;
+  border-color: none !important;
+  color: white !important;
+}
+
+.contact-container {
+  background-color: black;
+
+  height: 100vh;
+}
+
+.footer {
+  background-color: black;
+  margin-top: -1px !important;
+}
