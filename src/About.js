@@ -42,7 +42,7 @@ const About = () => {
                                 <Link to={'https://wa.me/qr/H2IJDJD55KCCO1'}><AiOutlineWhatsApp className='contact-logos' /></Link></span>
                         </Col>
                         <Col lg={2} md={2} className="text-lg-end ps-0 pt-lg-0 pt-md-0 pt-5">
-                            <Button className='act-button'><a href='/Contact' className='view fs-6'>Contact</a></Button>
+                            <Button className='act-button'><Link to={'/Contact'} className='view fs-6'>Contact</Link></Button>
                         </Col>
                     </Row>
 
