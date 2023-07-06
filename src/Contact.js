@@ -4,7 +4,7 @@ import emailjs from '@emailjs/browser';
 import { ToastContainer, toast } from 'react-toastify'
 
 const Contact = () => {
-
+     window.scrollTo(0,0);
     const form = useRef();
     const [pending, setPending] = useState(false)
     const handleSubmit = (e) => {
