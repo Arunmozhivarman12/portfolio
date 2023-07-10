@@ -21,7 +21,7 @@ const Home = () => {
                             <p className='mt-5 ms-3 fs-1'>Hi.</p>
                             <h1 className='ms-3 '>I am <span className='name m-0'>ARUNMOZHIVARMAN</span></h1>
                             <p className='ms-3  fs-5  mb-5 intro-line pe-3'><span className='name fs-1'>Full stack web developer</span> Looking to deliver excellent web development skills to help grow a company.  </p>
-                            <Button className=' ms-3 act-button fs-4'><a href='https://drive.google.com/file/d/1cKUgV-S6Pp76NpIB_PCNFyGNUPLIFJCh/view?usp=drivesdk' className='view'>Resume</a></Button>
+                            <Button className=' ms-3 act-button fs-4'><a href='https://drive.google.com/file/d/1hmTP5hd6LXriBcnfEkOBgTorQEOBx1Rm/view?usp=drivesdk' className='view'>Resume</a></Button>
                         </Col> </Row>
                     <Row className='links  mt-5 ms-1'>
                         <span> <Link to={"mailto:arunakil12@gmail.com"} className='me-4'><BiLogoGmail className='contact-logos' /></Link>
