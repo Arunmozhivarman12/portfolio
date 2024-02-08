@@ -5,14 +5,22 @@ import { AiFillGithub } from "react-icons/ai";
 import { AiFillInstagram } from "react-icons/ai";
 import { AiOutlineWhatsApp } from "react-icons/ai";
 import { Link } from 'react-router-dom';
+import { useTheme } from "./Themecontext";
 
 
 const About = () => {
+
+    const darktheme = useTheme();
+       
+  const theme = {
+      backgroundColor:darktheme? 'black':'white',
+      color:darktheme? 'white':'black'
+  }
     return (
         <div>
-            <Container fluid className="about pt-3 pb-3">
+            <Container fluid className="about pt-3 pb-3" style={theme}>
                 <Container className="text-light">
-                    <Row className="justify-content-center">
+                    <Row className="justify-content-center" style={theme}>
                         <Col md={6}>
                             <div className="content">
                                 <h2 className="text-center mb-3">About Me</h2>
@@ -33,16 +41,16 @@ const About = () => {
                             </div>
                         </Col>
                     </Row>
-                    <Row className='links  mt-5 ms-1 justify-content-center '>
+                    <Row className='links  mt-5 ms-1 justify-content-center ' >
                         <Col lg={4} md={4} className="ps-0">
-                            <span > <Link to={"mailto:arunakil12@gmail.com"} className='me-4'><BiLogoGmail className='contact-logos' /></Link>
-                                <Link to={'https://www.linkedin.com/in/arunmozhivarman-m-06414a263'} className='me-4'><AiFillLinkedin className='contact-logos' /></Link>
-                                <Link to={'https://github.com/Arunmozhivarman12'} className='me-4'><AiFillGithub className='contact-logos' /></Link>
-                                <Link to={'https://instagram.com/arun_akil_?igshid=MzNlNGNkZWQ4Mg=='} className='me-4'><AiFillInstagram className='contact-logos' /></Link>
-                                <Link to={'https://wa.me/qr/H2IJDJD55KCCO1'}><AiOutlineWhatsApp className='contact-logos' /></Link></span>
+                            <span style={theme}> <Link to={"mailto:arunakil12@gmail.com"} className='me-4' ><BiLogoGmail className='contact-logos' style={theme}/></Link>
+                                <Link to={'https://www.linkedin.com/in/arunmozhivarman-m-06414a263'} className='me-4'><AiFillLinkedin className='contact-logos' style={theme} /></Link>
+                                <Link to={'https://github.com/Arunmozhivarman12'} className='me-4'><AiFillGithub className='contact-logos' style={theme}/></Link>
+                                <Link to={'https://instagram.com/arun_akil_?igshid=MzNlNGNkZWQ4Mg=='} className='me-4'><AiFillInstagram className='contact-logos' style={theme}/></Link>
+                                <Link to={'https://wa.me/qr/H2IJDJD55KCCO1'}><AiOutlineWhatsApp className='contact-logos'style={theme} /></Link></span>
                         </Col>
                         <Col lg={2} md={2} className="text-lg-end ps-0 pt-lg-0 pt-md-0 pt-5">
-                            <Button className='act-button'><Link to={'/Contact'} className='view fs-6'>Contact</Link></Button>
+                            <Button className='act-button' style={theme}><Link to={'/Contact'} className='view fs-6' style={theme}>Contact</Link></Button>
                         </Col>
                     </Row>
 

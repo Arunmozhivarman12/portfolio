@@ -8,11 +8,14 @@ import Contact from './Contact';
 import About from './About';
 import Footer from './Footer';
 import Nopage from './Nopage';
+import { ThemeProvider } from './Themecontext';
+
 
 function App() {
   return (
     <div className='app'>
       <BrowserRouter>
+      <ThemeProvider>
         <Header />
         <Routes>
           <Route path='/' element={<Home />} />
@@ -22,6 +25,7 @@ function App() {
           <Route path='*' element={<Nopage/>} />
         </Routes>
         <Footer />
+        </ThemeProvider>
       </BrowserRouter>
     </div>
   );

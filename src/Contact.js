@@ -1,9 +1,19 @@
 import React, { useState, useRef } from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import emailjs from '@emailjs/browser';
-import { ToastContainer, toast } from 'react-toastify'
+import { ToastContainer, toast } from 'react-toastify';
+import { useTheme } from "./Themecontext";
+
 
 const Contact = () => {
+    const darktheme = useTheme();
+       
+    const theme = {
+        backgroundColor:darktheme? 'black':'white',
+        color:darktheme? 'white':'black'
+    }
+
+
      window.scrollTo(0,0);
     const form = useRef();
     const [pending, setPending] = useState(false)
@@ -33,12 +43,12 @@ const Contact = () => {
     return (
         <div>
             <ToastContainer />
-            <Container fluid className='contact-container '>
+            <Container fluid className='contact-container ' style={theme}>
                 <Container className=''>
-                    <Row className='justify-content-center pt-5 '>
+                    <Row className='justify-content-center pt-5 ' >
                         <Col lg='4'>
-                            <h4 className='text-center text-light mb-5'>Contact<span className='name ms-1'>me</span></h4>
-                            <form onSubmit={handleSubmit} ref={form}>
+                            <h4 className='text-center  mb-5'>Contact<span className='name ms-1'>me</span></h4>
+                            <form  ref={form}>
                                 <input
                                     type="text"
                                     name='name'
@@ -64,7 +74,7 @@ const Contact = () => {
                                     className='bg-dark mt-5 p-2'
                                 ></textarea>
                                 <br></br>
-                                <Container className='text-center mt-5'><Button type="submit" className='act-button' disabled={pending ? true : false}>{pending ? ("loading...") : ("Send Message")}</Button></Container>
+                                <Container className='text-center mt-5'><Button type="submit" className='act-button' style={theme} disabled={pending ? true : false} onClick={handleSubmit}>{pending ? ("loading...") : ("Send Message") }</Button></Container>
                             </form>
                         </Col>
                     </Row>

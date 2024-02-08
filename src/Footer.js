@@ -5,12 +5,32 @@ import { AiFillGithub } from "react-icons/ai";
 import { AiFillInstagram } from "react-icons/ai";
 import { AiOutlineWhatsApp } from "react-icons/ai";
 import { Link } from 'react-router-dom';
+import { useTheme } from './Themecontext';
+
 
 const Footer = () => {
+
+    const darktheme = useTheme();
+  
+    const theme = {
+      backgroundColor: darktheme ? 'black' : 'white',
+      color: darktheme ? 'white' : 'black'
+    }
+  
+    const theme2 = {
+      backgroundColor: darktheme ? 'rgb(11, 11, 11)' : 'white',
+      color: darktheme ? 'white' : 'black'
+    }
+  
+    const theme3 = {
+      backgroundColor: darktheme ? 'rgb(11, 11, 11)' : 'white',
+      boxShadow: darktheme ? 'none' : 'rgba(149, 157, 165, 0.2) 0px 8px 24px',
+      color: darktheme ? 'white' : 'black'
+    }
     return (
         <div>
-            <Container fluid className="footer pb-2">
-                <Container className="bar text-center">
+            <Container fluid className="footer pb-2" style={theme}>
+                <Container className="bar text-center" style={theme3}>
                     <Row className="pt-2">
                         <span className="link "> <Link to={"mailto:arunakil12@gmail.com"} className='me-4'><BiLogoGmail className='contact-logos' /></Link>
                             <Link to={'https://www.linkedin.com/in/arunmozhivarman-m-06414a263'} className='me-4'><AiFillLinkedin className='contact-logos' /></Link>
